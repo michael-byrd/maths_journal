@@ -1,0 +1,43 @@
+\documentclass[11pt,letterpaper]{book}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\usepackage{subfiles}
+\usepackage{import}
+
+
+% Math environments
+\usepackage{amsthm}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\newtheorem{conjecture}{Conjecture}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+
+
+\begin{document}
+	
+	\tableofcontents	
+
+%	This is the main file. Each Part of this text will be a subject of Mathematics. These parts will serve as standalone self-contained books.
+	
+%	Parts will be defined in this file (main.tex). After each part is defined, the appropiate subfile will be included/inputed. Within that file 
+	
+
+	
+	\part{Calculus}
+	\input{books/calculus/calculus_book.tex}
+	
+		
+\end{document}
