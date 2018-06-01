@@ -1,3 +1,10 @@
-\contentsline {part}{I\hspace {1em}Calculus}{3}
-\contentsline {chapter}{\numberline {1}Derivatives}{5}
-\contentsline {section}{\numberline {1.1}Rates of Change}{5}
+\contentsline {part}{I\hspace {1em}Calculus}{5}{part.1}
+\contentsline {chapter}{Derivatives}{7}{chapter*.2}
+\contentsline {section}{Rates of Change}{7}{section*.3}
+\contentsline {part}{II\hspace {1em}Abstract Algebra}{9}{part.2}
+\contentsline {chapter}{Groups}{11}{chapter*.4}
+\contentsline {section}{Introduction - Groups}{11}{section*.5}
+\contentsline {part}{III\hspace {1em}Combinatorics}{13}{part.3}
+\contentsline {chapter}{Graphs}{15}{chapter*.6}
+\contentsline {section}{Introduction - Graphs}{15}{section*.7}
+\contentsfinish 

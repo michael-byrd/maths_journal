@@ -1,16 +1,20 @@
-\documentclass[11pt,letterpaper]{book}
+\documentclass[11pt,letterpaper]{tufte-book}
 \usepackage[latin1]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
+\usepackage{amsmath, amsfonts, amssymb}
 \usepackage{graphicx}
 
 
 \usepackage{subfiles}
 \usepackage{import}
 
+%%% Reset Chapter Count for each Part
 
-% Math environments
+\makeatletter
+\@addtoreset{chapter}{part}
+\makeatother  
+
+
+%%% Math Environments %%%
 \usepackage{amsthm}
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}
@@ -20,13 +24,37 @@
 \newtheorem{conjecture}{Conjecture}
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}
-
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}
 \newtheorem{example}{Example}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% When creating a new book.
+% Create the book directory, tex, chapter, and section file to get things started
+% GitHub does not push empty directories.
+
+%%% input commands %%%
+
+% input parts
+% \input{books/SUBJECTDIR/SUBJECT.tex}
+
+% input chapters
+% \input{books/SUBJECTDIR/CHAPTRT.tex}
+
+% input sections
+% \input{books/SUBJECTDIR/sections/SECTION.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\title{Mathematics Journal}
+\author{Michael C.R. Byrd Jr.}
 
 \begin{document}
+	
+	\maketitle
 	
 	\tableofcontents	
 
@@ -39,5 +67,10 @@
 	\part{Calculus}
 	\input{books/calculus/calculus_book.tex}
 	
+	\part{Abstract Algebra}
+	\input{books/abstract_algebra/abstract_algebra_book.tex}
+	
+	\part{Combinatorics}
+	\input{books/combinatorics/combinatorics_book.tex}
 		
 \end{document}
