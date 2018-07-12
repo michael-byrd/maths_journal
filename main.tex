@@ -1,7 +1,17 @@
-\documentclass[11pt,letterpaper]{tufte-book}
+\documentclass[11pt,letterpaper, oneside]{book}
 \usepackage[latin1]{inputenc}
 \usepackage{amsmath, amsfonts, amssymb}
 \usepackage{graphicx}
+
+%%% Graphics & Figures
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\usepackage{float}
+
+%%%%%%%%
+
 
 
 \usepackage{subfiles}
@@ -27,6 +37,10 @@
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}
 \newtheorem{example}{Example}
+
+% Braket Package for Dirac Notation - Quantum 
+
+\usepackage{braket}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -72,5 +86,7 @@
 	
 	\part{Combinatorics}
 	\input{books/combinatorics/combinatorics_book.tex}
-		
+	
+	\part{Quantum Computation}
+	\input{books/quantum_computation/quantum_computation_book.tex}
 \end{document}
